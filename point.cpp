@@ -1,6 +1,7 @@
-#include "point.h"
 #include <iostream>
 #include <cmath>
+#include "point.h"
+#include "poligono.h"
 
 using namespace std;
 
@@ -9,10 +10,16 @@ Point::Point(float mx, float my)
     setXY(mx,my);
 }
 
-Point::Point(Point &p1)
+void Point::operator*(float a)
 {
-    x = p1.x;
-    y = p1.y;
+    x = x*a;
+    y = y*a;
+}
+
+void Point::operator=(Point _p)
+{
+    x = _p.x;
+    y = _p.y;
 }
 
 Point Point::add(Point p1)
@@ -46,7 +53,7 @@ void Point::translada(float a, float b)
     y = y + b;
 }
 
-void Point::imprime()
+void Point::imprimir()
 {
     cout << "(" << x << ", " << y << ")";
 }

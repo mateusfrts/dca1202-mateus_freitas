@@ -1,5 +1,8 @@
 #ifndef POINT_H
 #define POINT_H
+#include <iostream>
+
+using namespace std;
 
 /**
  * @brief The Point class
@@ -15,9 +18,10 @@ private:
     float y;
 public:
     Point(float mx=0, float my=0);
-    Point(Point &p1);
-    ~Point();
+    ~Point(void){cout << "";}
 
+    void operator*(float a);
+    void operator=(Point _p);
     /**
      * @brief setX Define o valor da variável 'x' do ponto.
      * @param mx Parâmetro que contem o valor de 'x' do ponto.
@@ -83,9 +87,9 @@ public:
      */
     void translada(float a, float b);
     /**
-     * @brief imprime Imprime o ponto no modelo (x, y)
+     * @brief imprimir imprimir o ponto no modelo (x, y)
      */
-    void imprime();
+    void imprimir();
 };
 
 #endif // POINT_H

@@ -1,18 +1,13 @@
 #include "retangulo.h"
 #include "poligono.h"
 
-Retangulo::Retangulo(float mx, float my, float _largura, float _altura)
+Retangulo::Retangulo(float x, float y, float _altura, float _largura)
 {
-    setN(4);
-    vert = new float[4];
-
-    x0 = mx;
-    y0 = my;
-    largura = _largura;
     altura = _altura;
+    largura = _largura;
 
-    Poligono::setVertice(x0, y0,0);
-    Poligono::setVertice(x0, y0-altura,1);
-    Poligono::setVertice(x0+largura,y0-altura,2);
-    Poligono::setVertice(x0+largura,y0,3);
+    setVertice(x,         y);
+    setVertice(x+largura, y);
+    setVertice(x+largura, y+altura);
+    setVertice(x,         y+altura);
 }
