@@ -1,2 +1,2 @@
-# dca1202 - Mateus Freitas
-Repositório destinado a armazenar o desenvolvimento de atividades da disciplina DCA1202 - Programação Avançada da UFRN 2018.2
+# Retangulo
+Desenvolvimento da classe Retangulo usando duas classes como base: Point e Polígono.
