@@ -12,11 +12,11 @@ int main(void)
     Screen t(25, 50);
     t.setBrush('m');
 
-    Retangulo o1(7,7,5,3,true);
+    Retangulo o1(8,7,5,3,true);
     o1.draw(t);
     cout << t;
 
-    Retangulo o2(7,2,5,3,true);
+    Retangulo o2(8,2,5,3,true);
     o2.draw(t);
     cout << t;
 
