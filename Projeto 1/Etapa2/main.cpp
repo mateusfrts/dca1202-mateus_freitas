@@ -9,7 +9,7 @@ using namespace std;
 
 int main(void)
 {
-    Screen t(25, 50);
+    Screen t(25, 30);
     t.setBrush('m');
 
     Retangulo o1(8,7,5,3,true);
