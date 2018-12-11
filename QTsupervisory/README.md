@@ -180,5 +180,3 @@ Um exemplo de interface para o módulo consumidor de dados é mostrado na
 figura que segue:
 
 ![Produtor de dados](images/dataconsumer.png)
-
-# Projeto---QtSupervisory
